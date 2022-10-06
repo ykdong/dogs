@@ -24,7 +24,7 @@ This is a full stack web application using React, Node.js, Koa and Webpack. It i
 
 ## Introduction
 
-This is a full stack [React](https://reactjs.org/) application with a [Node.js](https://nodejs.org/en/) and [Koa](https://koajs.com/) backend. Client side code is written in React and the backend API is written using Koa.
+This is a full stack [Koa](https://koajs.com/)  [Node.js](https://nodejs.org/en/) backend application with [React](https://reactjs.org/) frontend. Client side code is written in React and the backend API is written using Koa.
 
 ### Development mode
 
@@ -206,7 +206,7 @@ This starts a server and listens on port **3011** for connections as required. T
 
 ### Concurrently
 
-[Concurrently](https://github.com/kimmobrunfeldt/concurrently) is used to run multiple commands concurrently. I am using it to run the webpack dev server and the backend node server concurrently in the development environment. Below are the npm script commands used.
+[Concurrently](https://github.com/kimmobrunfeldt/concurrently) is used to run multiple commands concurrently. I am using it to run the frontend server and the backend node server concurrently in the development environment. Below are the npm script commands used.
 
 ```javascript
 "scripts": {
