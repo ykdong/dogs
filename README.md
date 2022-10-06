@@ -183,18 +183,18 @@ app.use(cors({origin: '*'}));
 app.use(serve('public'));
 
 router.get('/list', KoaBody(), async (ctx) => {
-	const res = await fetch(`https://dog.ceo/api/breeds/list`);
+  const res = await fetch(`https://dog.ceo/api/breeds/list`);
   const data = await res.json();
-	ctx.set('Content-Type', 'application/json');
-	ctx.body = data;
+  ctx.set('Content-Type', 'application/json');
+  ctx.body = data;
 });
 
 router.get('/:breed', KoaBody(), async (ctx) => {
-	const userBreed = ctx.request.url.slice(1);
-	const res = await fetch(`https://dog.ceo/api/breed/${userBreed}/images/random`);
+  const userBreed = ctx.request.url.slice(1);
+  const res = await fetch(`https://dog.ceo/api/breed/${userBreed}/images/random`);
   const data = await res.json();
-	ctx.set('Content-Type', 'application/json');
-	ctx.body = data;
+  ctx.set('Content-Type', 'application/json');
+  ctx.body = data;
 });
 
 app.use(router.routes());
