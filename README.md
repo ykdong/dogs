@@ -55,6 +55,8 @@ npm run build
 # Start production server
 npm start
 ```
+### Or use our live Demo
+- Live Site URL: [Dogs-koa](https://tip-calculator-red-two.vercel.app/) &#128151;
 
 ## Documentation
 
