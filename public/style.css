@@ -1,0 +1,10 @@
+body {
+  background-color: #81a69b;
+  background-image: url(http://pets-images.dev-apis.com/pets/wallpaperB.jpg);
+}
+
+img {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+}
